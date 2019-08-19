@@ -3,14 +3,14 @@ id INT PRIMARY KEY,
 title TEXT,
 budget  BIGINT,
 revenue	BIGINT,
-vote_average INT,
+vote_average float,
 vote_count INT
 );
 
 CREATE TABLE movie_studio (
 id INT PRIMARY KEY,
-m_title TEXT,
-m_Studio TEXT
+mov_title TEXT,
+studio TEXT
 );
 
 CREATE TABLE movie_info (
@@ -22,6 +22,13 @@ genres	TEXT,
 country TEXT,
 language TEXT,
 title_year INT,
-imdb_score INT,
-facenumber_in_poster INT
+imdb_score float,
+facenumber_in_poster INT,
+cast_total_facebook_likes INT
+);
+
+CREATE TABLE movie_genres (
+id INT PRIMARY KEY,
+movie_title TEXT,
+genres TEXT
 );
