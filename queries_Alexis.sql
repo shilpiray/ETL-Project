@@ -1,0 +1,2 @@
+--there aren't any because I couldn't get my .csv file to load to my database
+--I created the db in postgres and created the tables but couldn't get the 'csv file to load
